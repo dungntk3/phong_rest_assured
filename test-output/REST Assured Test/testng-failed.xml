@@ -5,7 +5,7 @@
     <classes>
       <class name="api.test.SimpleGetTest">
         <methods>
-          <include name="TC_05_verifyResponse"/>
+          <include name="TC_03_verifyResponse"/>
         </methods>
       </class> <!-- api.test.SimpleGetTest -->
     </classes>

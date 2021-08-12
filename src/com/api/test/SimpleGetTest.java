@@ -10,14 +10,18 @@ import com.jayway.restassured.path.json.JsonPath;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import log.LogHelper;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import io.restassured.path.xml.XmlPath;
+import org.slf4j.Logger;
 
 public class SimpleGetTest {
+	private Logger log = LogHelper.getLogger();
 
-	//@Test
+	@Test
 	public void TC_01_verifyResponse() {
 
 		RestAssured.baseURI = "https://maps.googleapis.com";
@@ -39,7 +43,7 @@ public class SimpleGetTest {
 
 	}
 	
-	//@Test
+	@Test
 	public void TC_02_verifyResponse(){
 		
 		RestAssured.baseURI = "https://maps.googleapis.com";
@@ -55,13 +59,13 @@ public class SimpleGetTest {
 		extract().response();
 		
 		String respose = res.asString();
-		System.out.println(respose);
+		log.info(respose);
 		
 		
 		
 		JsonPath jsonResponse = new JsonPath(respose);
 		String placeId = jsonResponse.get("status");
-		System.out.println(placeId);
+		log.info(placeId);
 		
 		
 //		given().
@@ -77,10 +81,9 @@ public class SimpleGetTest {
 
 	}
 	
-	//@Test
-	public void TC_03_verifyResponse() throws IOException{
-		
-		System.out.println(System.getProperty("user.dir"));
+	@Test
+	public void TC_03_verifyResponse(){
+		log.info(System.getProperty("user.dir"));
 		
 		String requestBody = generateString("PostXMLPayload.xml");
 		
@@ -95,16 +98,17 @@ public class SimpleGetTest {
 		extract().response();
 		
 		String respose = res.asString();
-		System.out.println(respose);
+		
+		log.info(respose);
 		
 		XmlPath xmlResponse = new XmlPath(respose);
 		String placeId = xmlResponse.get("PlaceAddResponse.place_id");
-		System.out.println("*********************");
-		System.out.println(placeId);
+		log.info("*********************");
+		log.info(placeId);
 
 	}
 	
-	//@Test
+	@Test
 	public void TC_04_verifyResponse(){
 		
 		RestAssured.baseURI = "https://maps.googleapis.com";
@@ -133,12 +137,12 @@ public class SimpleGetTest {
 		
 		for (int i = 0; i < arrSize; i++) {
 			String name = jsonRes.getString("results["+i+"].name");
-			System.out.println(name);
+			log.info(name);
 		}	 
 	}
 	
-	//@Test
-	public void TC_05_verifyResponse() throws IOException{
+	@Test
+	public void TC_05_verifyResponse(){
 		
 		String requestBody = generateString("JiraLogin.json");
 		
@@ -192,7 +196,7 @@ public class SimpleGetTest {
 	}
 	
 	@Test
-	public void TC_06_verifyResponse() throws IOException{
+	public void TC_06_verifyResponse(){
 		
 		String requestBody = generateString("JiraLogin.json");
 		
@@ -232,7 +236,7 @@ public class SimpleGetTest {
 		String cmntID = addCmntResJson.getString("id");
 		
 		
-		System.out.println("Comment Added");
+		log.info("Comment Added");
 		
 		//Update Comment
 		String UpdateCmntBody = generateString("UpdateCmnt.json");
@@ -259,9 +263,15 @@ public class SimpleGetTest {
 	}
 	
 	
-	public static String generateString(String filename) throws IOException{
+	public static String generateString(String filename){
 		String filePath = System.getProperty("user.dir")+"\\Payloads\\"+filename;
-		return new String(Files.readAllBytes(Paths.get(filePath)));
+		try {
+			return new String(Files.readAllBytes(Paths.get(filePath)));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return filePath;
 	}
 
 }
