@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 10 18:39:45 ICT 2021
+groovy-3.0.7.jar>central=
+groovy-3.0.7.pom>central=
+groovy-3.0.7-sources.jar>central=

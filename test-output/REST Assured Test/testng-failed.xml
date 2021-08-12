@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [REST Assured Test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="API Test(failed)">
+    <classes>
+      <class name="api.test.SimpleGetTest">
+        <methods>
+          <include name="TC_05_verifyResponse"/>
+        </methods>
+      </class> <!-- api.test.SimpleGetTest -->
+    </classes>
+  </test> <!-- API Test(failed) -->
+</suite> <!-- Failed suite [REST Assured Test] -->

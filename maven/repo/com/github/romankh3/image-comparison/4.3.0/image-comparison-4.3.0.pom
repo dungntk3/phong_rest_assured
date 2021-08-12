@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.romankh3</groupId>
+  <artifactId>image-comparison</artifactId>
+  <version>4.3.0</version>
+  <name>image-comparison</name>
+  <description>Library that compares 2 images with the same sizes and shows the differences visually by drawing rectangles. Some parts of the image can be excluded from the comparison. Can be used for automation qa tests.</description>
+  <url>https://romankh3.github.io/image-comparison/</url>
+  <inceptionYear>2020</inceptionYear>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>romankh3</id>
+      <name>Roman Beskrovnyi</name>
+      <email>roman.beskrovnyy@gmail.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>git@github.com:romankh3/image-comparison.git</connection>
+    <developerConnection>git@github.com:romankh3/image-comparison.git</developerConnection>
+    <url>https://github.com/romankh3/image-comparison</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.5.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.5.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>2.26.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

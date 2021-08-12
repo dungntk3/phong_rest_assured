@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 10 17:43:22 ICT 2021
+javaparser-core-3.17.0.jar>central=
+javaparser-core-3.17.0-sources.jar>central=
+javaparser-core-3.17.0.pom>central=

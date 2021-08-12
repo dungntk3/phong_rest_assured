@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-11T15:07:44Z" name="REST Assured Test" finished-at="2021-08-11T15:07:46Z" duration-ms="2178">
+    <groups>
+    </groups>
+    <test started-at="2021-08-11T15:07:44Z" name="API Test" finished-at="2021-08-11T15:07:46Z" duration-ms="2178">
+      <class name="api.test.SimpleGetTest">
+        <test-method signature="TC_06_verifyResponse()[pri:0, instance:api.test.SimpleGetTest@74287ea3]" started-at="2021-08-11T15:07:44Z" name="TC_06_verifyResponse" finished-at="2021-08-11T15:07:46Z" duration-ms="2067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_06_verifyResponse -->
+      </class> <!-- api.test.SimpleGetTest -->
+    </test> <!-- API Test -->
+  </suite> <!-- REST Assured Test -->
+</testng-results>

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 10 00:38:31 ICT 2021
+json-schema-validator-2.2.6-sources.jar>central=
+json-schema-validator-2.2.6.jar>central=
+json-schema-validator-2.2.6.pom>central=

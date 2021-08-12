@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 10 00:20:51 ICT 2021
+org.eclipse.equinox.registry-3.5.101.jar>central=
+org.eclipse.equinox.registry-3.5.101-sources.jar>central=
+org.eclipse.equinox.registry-3.5.101.pom>central=

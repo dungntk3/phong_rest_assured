@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 10 00:27:46 ICT 2021
+rest-assured-all-4.2.0.jar>central=
+rest-assured-all-4.2.0-sources.jar>central=
+rest-assured-all-4.2.0.pom>central=

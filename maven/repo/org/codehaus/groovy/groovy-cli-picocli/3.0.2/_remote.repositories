@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 10 18:09:02 ICT 2021
+groovy-cli-picocli-3.0.2.jar>central=
+groovy-cli-picocli-3.0.2.pom>central=
+groovy-cli-picocli-3.0.2-sources.jar>central=
