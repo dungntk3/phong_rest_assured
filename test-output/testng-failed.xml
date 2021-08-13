@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [REST Assured Test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="log.SetupLog"/>
+  </listeners>
   <test thread-count="5" name="API Test(failed)">
     <classes>
-      <class name="api.test.SimpleGetTest">
+      <class name="api.test.SimpleTest">
         <methods>
-          <include name="TC_03_verifyResponse"/>
+          <include name="beforeMethod"/>
+          <include name="TC_06_verifyResponse"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- api.test.SimpleGetTest -->
+      </class> <!-- api.test.SimpleTest -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [REST Assured Test] -->

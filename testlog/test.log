@@ -1,0 +1,23 @@
+INFO  | 2021-08-13 18:08:35 | [main] log.SetupLog (SetupLog.java:beforeMethod:21) -  __RunTCStart__ TC_06_verifyDeleteAndPutRequest __RunTCStart__ 
+
+INFO  | 2021-08-13 18:08:35 | [main] api.verify.BaseAssertion (BaseAssertion.java:doLogin:55) - Starting Test Case : doLogin
+INFO  | 2021-08-13 18:08:35 | [main] api.util.RestUtil (RestUtil.java:generatePayLoadString:116) - Inside PayloadConverter function
+INFO  | 2021-08-13 18:08:35 | [main] api.util.URL (URL.java:getEndPointJira:16) - URI End Point : http://localhost:8080/rest/auth/1/session
+INFO  | 2021-08-13 18:08:35 | [main] api.util.RestUtil (RestUtil.java:POSTRequest:34) - Inside POSTRequest call
+INFO  | 2021-08-13 18:08:36 | [main] api.verify.BaseAssertion (BaseAssertion.java:doLogin:60) - {"session":{"name":"JSESSIONID","value":"126B93D8C291E7DB50B1622482668923"},"loginInfo":{"loginCount":59,"previousLoginTime":"2021-08-13T17:46:10.270+0700"}}
+INFO  | 2021-08-13 18:08:36 | [main] api.util.RestUtil (RestUtil.java:getResposeString:72) - Converting Response to String
+INFO  | 2021-08-13 18:08:36 | [main] api.util.RestUtil (RestUtil.java:jsonParser:79) - Parsing String Response to JSON
+INFO  | 2021-08-13 18:08:37 | [main] api.verify.BaseAssertion (BaseAssertion.java:doLogin:64) - JIRA JSession ID : 126B93D8C291E7DB50B1622482668923
+INFO  | 2021-08-13 18:08:37 | [main] api.util.RestUtil (RestUtil.java:generatePayLoadString:116) - Inside PayloadConverter function
+INFO  | 2021-08-13 18:08:37 | [main] api.util.RestUtil (RestUtil.java:getStatusCode:93) - Getting Response Code
+INFO  | 2021-08-13 18:08:37 | [main] api.util.RestUtil (RestUtil.java:getStatusCode:95) - 201
+INFO  | 2021-08-13 18:08:37 | [main] api.test.SimpleTest (SimpleTest.java:TC_06_verifyDeleteAndPutRequest:148) - Comment Added
+INFO  | 2021-08-13 18:08:37 | [main] api.util.RestUtil (RestUtil.java:generatePayLoadString:116) - Inside PayloadConverter function
+INFO  | 2021-08-13 18:08:37 | [main] api.util.RestUtil (RestUtil.java:getStatusCode:93) - Getting Response Code
+INFO  | 2021-08-13 18:08:37 | [main] api.util.RestUtil (RestUtil.java:getStatusCode:95) - 200
+INFO  | 2021-08-13 18:08:37 | [main] api.util.URL (URL.java:getEndPointJira:16) - URI End Point : http://localhost:8080/rest/api/2/issue/RA-1/comment/10037
+INFO  | 2021-08-13 18:08:37 | [main] api.util.RestUtil (RestUtil.java:DELETERequestWithHeader:62) - Inside DELETERequest call
+INFO  | 2021-08-13 18:08:37 | [main] api.util.RestUtil (RestUtil.java:getStatusCode:93) - Getting Response Code
+INFO  | 2021-08-13 18:08:37 | [main] api.util.RestUtil (RestUtil.java:getStatusCode:95) - 204
+INFO  | 2021-08-13 18:08:37 | [main] log.SetupLog (SetupLog.java:afterMethod:27) -  __RunTCEnd__ TC_06_verifyDeleteAndPutRequest __RunTCEnd__ 
+

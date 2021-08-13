@@ -2,9 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="REST Assured Test" verbose="1">
+
+	<listeners>
+		<listener class-name="log.SetupLog" />
+	</listeners>
+
 	<test name="API Test" enabled="true">
 		<classes>
-			<class name="api.test.SimpleGetTest" />
+			<class name="api.test.SimpleTest" />
 		</classes>
-	</test> 
+	</test>
 </suite>

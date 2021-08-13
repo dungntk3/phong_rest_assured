@@ -1,0 +1,9 @@
+<FindPlaceFromTextResponse>
+  <candidates>
+    <name>SKÖG Haus Coffee</name>
+    <icon_background_color>#FF9E67</icon_background_color>
+    <icon_mask_base_uri>https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet</icon_mask_base_uri>
+  </candidates>
+  <status>OK</status>
+</FindPlaceFromTextResponse>
+      
