@@ -6,13 +6,12 @@
   </listeners>
   <test thread-count="5" name="API Test(failed)">
     <classes>
-      <class name="api.test.SimpleTest">
+      <class name="api.test.HTTPSimpleTest">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="TC_06_verifyResponse"/>
-          <include name="afterMethod"/>
+          <include name="testGetCall"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- api.test.SimpleTest -->
+      </class> <!-- api.test.HTTPSimpleTest -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [REST Assured Test] -->

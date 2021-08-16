@@ -2,43 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-13T11:08:35Z" name="REST Assured Test" finished-at="2021-08-13T11:08:37Z" duration-ms="2543">
+  <suite started-at="2021-08-16T08:35:15Z" name="REST Assured Test" finished-at="2021-08-16T08:35:16Z" duration-ms="1042">
     <groups>
     </groups>
-    <test started-at="2021-08-13T11:08:35Z" name="API Test" finished-at="2021-08-13T11:08:37Z" duration-ms="2543">
-      <class name="api.test.SimpleTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:api.test.SimpleTest@5965be2d]" started-at="2021-08-13T11:08:35Z" name="beforeMethod" finished-at="2021-08-13T11:08:35Z" duration-ms="17" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.test.SimpleTest.TC_06_verifyDeleteAndPutRequest()]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2021-08-16T08:35:15Z" name="API Test" finished-at="2021-08-16T08:35:16Z" duration-ms="1042">
+      <class name="api.test.HTTPSimpleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:api.test.HTTPSimpleTest@409c54f]" started-at="2021-08-16T08:35:15Z" name="setUp" finished-at="2021-08-16T08:35:15Z" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_06_verifyDeleteAndPutRequest()[pri:0, instance:api.test.SimpleTest@5965be2d]" started-at="2021-08-13T11:08:35Z" name="TC_06_verifyDeleteAndPutRequest" finished-at="2021-08-13T11:08:37Z" duration-ms="2409" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetCall()[pri:0, instance:api.test.HTTPSimpleTest@409c54f]" started-at="2021-08-16T08:35:15Z" name="testGetCall" finished-at="2021-08-16T08:35:16Z" duration-ms="954" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_06_verifyDeleteAndPutRequest -->
-        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:api.test.SimpleTest@5965be2d]" started-at="2021-08-13T11:08:37Z" name="afterMethod" finished-at="2021-08-13T11:08:37Z" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.test.SimpleTest.TC_06_verifyDeleteAndPutRequest()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=TC_06_verifyDeleteAndPutRequest status=SUCCESS method=SimpleTest.TC_06_verifyDeleteAndPutRequest()[pri:0, instance:api.test.SimpleTest@5965be2d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- api.test.SimpleTest -->
+        </test-method> <!-- testGetCall -->
+      </class> <!-- api.test.HTTPSimpleTest -->
     </test> <!-- API Test -->
   </suite> <!-- REST Assured Test -->
 </testng-results>
