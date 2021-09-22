@@ -27,7 +27,7 @@ public class SimpleTest extends SetupLog {
 	public String sessionID_Test;
 
 	@Test
-	public void TC_01_verifyGetRequest() {
+	public void TC001_placeMap() {
 		RestAssured.baseURI = URL.URL_GG_MAP;
 		response = given().param("location", "-33.8670522,151.1957362").param("radius", "500")
 				.param("type", "restaurant").param("key", "AIzaSyB-ZliaFkPtyfykn7E2nW2yxgBPAvRVUMo")
@@ -39,7 +39,7 @@ public class SimpleTest extends SetupLog {
 	}
 
 	@Test
-	public void TC_02_verifyPostRequest() {
+	public void TC002_findPlace() {
 
 		RestAssured.baseURI = URL.URL_GG_MAP;
 		response = given().queryParam("key", "AIzaSyB-ZliaFkPtyfykn7E2nW2yxgBPAvRVUMo")
@@ -55,7 +55,7 @@ public class SimpleTest extends SetupLog {
 	}
 
 	@Test
-	public void TC_03_verifyPostRequest() {
+	public void TC003_addPlace() {
 		log.info(System.getProperty("user.dir"));
 
 		String requestBody = RestUtil.generatePayLoadString("PostXMLPayload.xml");
@@ -75,7 +75,7 @@ public class SimpleTest extends SetupLog {
 	}
 
 	@Test
-	public void TC_04_verifyGetRequest() {
+	public void TC004_placeSearch() {
 
 		RestAssured.baseURI = URL.URL_GG_MAP;
 
@@ -102,7 +102,7 @@ public class SimpleTest extends SetupLog {
 	}
 
 	@Test
-	public void TC_05_verifyPostRequest() {
+	public void TC005_addCommentToPlace() {
 
 		// Login Jira
 		sessionID_Test = BaseAssertion.doLoginJira();
@@ -128,7 +128,7 @@ public class SimpleTest extends SetupLog {
 	}
 
 	@Test
-	public void TC_06_verifyDeleteAndPutRequest() {
+	public void TC_06_deleteCommentInPlace() {
 
 		// Login Jira
 		sessionID_Test = BaseAssertion.doLoginJira();
